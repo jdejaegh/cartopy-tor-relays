@@ -1,0 +1,5 @@
+matplotlib
+geoip2
+scikit-learn
+cartopy
+fire
