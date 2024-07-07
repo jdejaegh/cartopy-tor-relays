@@ -20,11 +20,15 @@ The program takes two arguments: the filename of the consensus and the filename 
 python map.py 2024-03-27-13-00-00-consensus GeoLite2-City.mmdb
 ```
 
-A third (optional) parameter can control the density of the clusters.  The default is 1.5 and generally gives nice maps.
+### Optional parameters
+
+`--eps 1.5`: control the density of the clusters.  The default is 1.5 and generally gives nice maps.
 The higher the value, the bigger the clusters.
 
+`--weight`: if set, use the consensus weight instead of the count of relays for the size of the clusters.
+
 ```shell
-python map.py 2024-03-27-13-00-00-consensus GeoLite2-City.mmdb 1.5
+python map.py 2024-03-27-13-00-00-consensus GeoLite2-City.mmdb --eps 1.5 --weight
 ```
 
 ## Using OSM data (optional)
